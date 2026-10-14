@@ -1,0 +1,14 @@
+# Node / Playwright
+node_modules/
+/ui-automation-test/test-results/
+/ui-automation-test/playwright-report/
+/ui-automation-test/playwright/.cache/
+
+# Java / Maven / Karate
+target/
+*.class
+
+# IDE (IntelliJ dll)
+.idea/
+*.iml
+.DS_Store

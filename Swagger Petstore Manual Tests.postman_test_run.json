@@ -1,0 +1,145 @@
+{
+	"id": "4ffcb1c9-b64e-4265-b79e-d9ee960d6a96",
+	"name": "Swagger Petstore Manual Tests",
+	"timestamp": "2026-10-14T06:45:07.796Z",
+	"collection_id": "44142207-e59ed1b5-76c9-48a9-a5f9-80cdef34efd4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-10-14T06:45:06.690Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "c59765f4-b1d4-4ad7-913a-f2b40eca4f76",
+			"name": "API-POST-01 - Add Valid Pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 275,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields": true,
+				"Validate the structure of the category object": true,
+				"photoUrls is an array with at least one element": true,
+				"Status must be a non-empty string": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the structure of the category object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"photoUrls is an array with at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status must be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields": true,
+					"Validate the structure of the category object": true,
+					"photoUrls is an array with at least one element": true,
+					"Status must be a non-empty string": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "72555478-a3ac-426b-ba04-8a2f5a0ea54a",
+			"name": "API-GET-01: Valid Status 'available'",
+			"url": "https://petstore.swagger.io/v2/pet/findByStatus?status=available",
+			"time": 272,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				272
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cc04bda0-fa64-452d-a3e8-42fb17e0b626",
+			"name": "API-DEL-01: Valid Deletion",
+			"url": "https://petstore.swagger.io/v2/pet/123456789",
+			"time": 262,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 809,
+	"collection": {
+		"requests": [
+			{
+				"id": "c59765f4-b1d4-4ad7-913a-f2b40eca4f76",
+				"method": "POST"
+			},
+			{
+				"id": "72555478-a3ac-426b-ba04-8a2f5a0ea54a",
+				"method": "GET"
+			},
+			{
+				"id": "cc04bda0-fa64-452d-a3e8-42fb17e0b626",
+				"method": "DELETE"
+			}
+		]
+	}
+}
